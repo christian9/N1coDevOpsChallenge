@@ -9,3 +9,8 @@ la carpeta n1co-web contiene una applicacion de ASP.NET Core la cual se empaquet
 Esta aplicacion a la vez puede agregar registros a la base de datos SQL Server y al Cosmos DB para cargas de MongoDB
 
 
+Para poder levantar la aplicacion primero debemos ubicarnos en el directorio de Terraform configurar nuestra conexion a azure e inicializar el repositorio
+haciendo un terraform init y luego proceder al despliegue con terraform apply, esto nos creara la infraestructura mencionada antes.
+
+Seguidamente procedemos a configurar los secretos en nuestro repositorio para que se pueda cargar la imagen de docker al Azure Container Registry y 
+desplegarla a Azure Kubernetes Service, tambien configuramos los secretos para las conexiones a las bases de datos de SQL Server y MongoDB.
